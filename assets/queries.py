@@ -24,6 +24,7 @@ def getCompanyUsers():
         cur = cnx.cursor()
         cur.execute("SELECT id, email FROM user")
         row = cur.fetchall()
+        
         return row
     
     except mariadb.Error as e:

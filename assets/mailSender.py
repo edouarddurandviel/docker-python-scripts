@@ -6,7 +6,7 @@ from email.message import EmailMessage
 
 def send_mail_with_attachment(emails, zipped_file_path, file_name):
     
-    emails = emails if len(emails) > 0 else ['to@mail.com', 'to@mail2.com']
+    emails = emails if len(emails) > 0 else ['to@mail-1.com', 'to@mail-2.com']
     content = """\
         Bonjour!
 

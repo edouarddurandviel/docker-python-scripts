@@ -16,7 +16,7 @@ def generate(user_rows: array, current_dir: string, date: datetime):
         for row in user_rows:
             f.write(f"Company: {row[0]} Email: {row[1]}\n")
     
-    return file_path
+    return file_path, output_dir
 
 
 def remove(generated_textfile: string):
