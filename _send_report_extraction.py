@@ -31,7 +31,7 @@ def main():
     # write report_01/01/2026.txt
     ############################# 
     try:
-        file_path = WriteFiles.generate(user_rows, current_dir, date)
+        file_path, output_dir = WriteFiles.generate(user_rows, current_dir, date)
     except Exception as e:
         if e:
             print(f"{e} file could not be written") 
@@ -40,15 +40,18 @@ def main():
      
      
     # zip to report_01/01/2026.zip
-    ############################     
-    try:    
-        zipped_file = zipfiles.create(file_path, date)
-    except Exception as e:
-        if e:
-            print(f"{e} zip file could not be created")
-            sys.exit(1)
-    finally:
-        WriteFiles.remove(file_path)
+    ############################  
+    if os.path.isfile(file_path):   
+        try: 
+            zipped_file = zipfiles.create(file_path, output_dir, date)
+            
+            print(zipped_file)
+        except Exception as e:
+            if e:
+                print(f"{e} zip file could not be created")
+                sys.exit(1)
+        finally:
+            WriteFiles.remove(file_path)
             
 
     if not os.path.isfile(zipped_file):
