@@ -31,6 +31,12 @@ docker pull rnwood/smtp4dev:prerelease
 python _send_report_extraction.py
 ```
 
+```bash
+python _load_from_placeholder_to_csv.py
+```
+Une erreur sera générée, car aucune table n'a été prévue pour recevoir les données de JSONPlaceholder.
+Seules la requête HTTP permettant d'appeler JSONPlaceholder et la fonction de création du fichier CSV seront exécutées.  
+
 ---------------------------
 
 ### poetry add modules
