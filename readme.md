@@ -8,7 +8,7 @@ poetry install
  ```bash
 
 # installation et 
-# import de la base de données
+# importation de la base de données
 docker compose up -d
 ```
 
