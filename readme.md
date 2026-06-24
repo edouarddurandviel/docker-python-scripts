@@ -12,7 +12,7 @@ docker compose up -d
 ```
 
 ### smtp4dev
-Installation smtp4dev sur Docker
+Installation de smtp4dev sur Docker
 via le lien: **https://hub.docker.com/r/rnwood/smtp4dev**
 En bas à droite lancer la commade: **Run in Docker Desktop**
 
