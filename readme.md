@@ -7,7 +7,8 @@ poetry install
 ### Installation de MariaDB
  ```bash
 
-# installtion et import de la base de données
+# installation et 
+# import de la base de données
 docker compose up -d
 ```
 
