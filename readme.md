@@ -24,11 +24,12 @@ docker pull rnwood/smtp4dev:prerelease
 
 ---------------------------
 
-### run script with poetry
-
+### Send extraction report script
 ```bash
-poetry run python main.py
+python _send_report_extraction.py
 ```
+
+---------------------------
 
 ### poetry add modules
 
