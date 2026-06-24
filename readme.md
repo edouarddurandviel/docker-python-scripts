@@ -1,9 +1,5 @@
-### Create python venv
-```bash
-python3 -m venv project-env
-```
+### Create python venv from existing .toml
 
-### Install modules
 ```bash
 poetry install
 ```
