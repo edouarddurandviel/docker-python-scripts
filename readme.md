@@ -22,6 +22,8 @@ ou directement en ligne de commande:
 ```bash
 docker pull rnwood/smtp4dev:prerelease
 ```
+> Ne pas oublier de lancer dans Docker Descktop smtp4dev.
+
 
 ---------------------------
 ## Script de test
