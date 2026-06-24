@@ -22,7 +22,7 @@ ou directement en ligne de commande:
 ```bash
 docker pull rnwood/smtp4dev:prerelease
 ```
-> Ne pas oublier de lancer dans Docker Descktop smtp4dev.
+> Ne pas oublier de lancer dans Docker Descktop smtp4dev. [Duck Duck Go](https://localhost:3000 "smtp mails").
 
 
 ---------------------------
