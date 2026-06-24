@@ -1,28 +1,29 @@
-### Create python venv from existing .toml
+### Créer un env. python sur la base du .toml  existant
 
 ```bash
 poetry install
 ```
 
-### MariaDB installation
+### Installation de MariaDB
  ```bash
 
-# will import existing database
+# installtion et import de la base de données
 docker compose up -d
 ```
 
 ### smtp4dev
-Primarily, open docker desktop, then
-follow link: **https://hub.docker.com/r/rnwood/smtp4dev**
-finally, down to the bottom right, right click on **Run in Docker Desktop**
+Installation smtp4dev sur Docker
+via le lien: **https://hub.docker.com/r/rnwood/smtp4dev**
+En bas à droite lancer la commade: **Run in Docker Desktop**
 
-or do the command:
+ou directement en ligne de commande:
 
 ```bash
 docker pull rnwood/smtp4dev:prerelease
 ```
 
 ---------------------------
+## Script de test
 
 ### Send extraction report script
 ```bash
