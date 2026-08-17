@@ -1,7 +1,7 @@
 
 import mariadb
 import requests
-from services import config
+from config import settings
 import sys
 
 def getDataFromJsonPlaceholder():
@@ -19,7 +19,7 @@ def getDataFromJsonPlaceholder():
 
 def getCompanyUsers():
     try:
-        cnx = mariadb.connect(**config.conn_params)
+        cnx = mariadb.connect(**settings.conn_params)
         print(cnx)
         cur = cnx.cursor()
         cur.execute("SELECT id, email FROM user")
@@ -39,7 +39,7 @@ def getCompanyUsers():
             
 def getVersionFromMariaDB():
     try:
-        cnx = mariadb.connect(**config.conn_params)
+        cnx = mariadb.connect(**settings.conn_params)
         print(cnx)
         cur = cnx.cursor()
         cur.execute("SELECT VERSION();")
@@ -59,7 +59,7 @@ def getVersionFromMariaDB():
 
 def loadDataInMariaDB(fileRoot):
     try:
-        cnx = mariadb.connect(**config.conn_params)
+        cnx = mariadb.connect(**settings.conn_params)
         
         print(cnx)
         cur = cnx.cursor()
