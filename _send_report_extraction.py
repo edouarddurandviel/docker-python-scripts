@@ -6,7 +6,7 @@ from datetime import datetime
 from services import queries
 from services import mailSender
 from services import zipfiles
-from classes import WriteFiles
+from services import filesWriter
 
 
 def main():
@@ -31,7 +31,7 @@ def main():
     # write report_01/01/2026.txt
     ############################# 
     try:
-        file_path, output_dir = WriteFiles.generate(user_rows, current_dir, date)
+        file_path, output_dir = filesWriter.generate(user_rows, current_dir, date)
     except Exception as e:
         if e:
             print(f"{e} file could not be written") 
@@ -51,7 +51,7 @@ def main():
                 print(f"{e} zip file could not be created")
                 sys.exit(1)
         finally:
-            WriteFiles.remove(file_path)
+            filesWriter.remove(file_path)
             
 
     if not os.path.isfile(zipped_file):
