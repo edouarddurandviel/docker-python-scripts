@@ -1,7 +1,7 @@
 import sys
 
-from assets import queries
-from assets import utilsfiles
+from services import queries
+from services import utilsfiles
 
 def main():
     version = queries.getVersionFromMariaDB()

@@ -3,9 +3,9 @@ import sys
 import datetime
 
 from datetime import datetime
-from assets import queries
-from assets import mailSender
-from assets import zipfiles
+from services import queries
+from services import mailSender
+from services import zipfiles
 from classes import WriteFiles
 
 

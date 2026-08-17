@@ -1,7 +1,7 @@
 
 import mariadb
 import requests
-from assets import config
+from services import config
 import sys
 
 def getDataFromJsonPlaceholder():
