@@ -2,7 +2,6 @@ import os
 import sys
 import datetime
 
-from datetime import datetime
 from services import queries
 from services import mailSender
 from services import zipfiles
@@ -77,3 +76,4 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         print("Error: %s" % e)
+        sys.exit(1)
